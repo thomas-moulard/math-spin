@@ -1,0 +1,47 @@
+2007-07-18  Thomas Moulard  <thomas.moulard@lrde.epita.fr>
+
+	Remove compete representation's description.
+	* representation.tex: Here.
+
+2007-07-18  Nicolas Pierron  <nicolas.b.pierron@gmail.com>
+
+	Remove fragile annotations.
+	* representation.tex: Remove fragile annotation because they
+	cause compilation failures.
+
+2007-07-17  Thomas Moulard  <thomas.moulard@gmail.com>
+
+	Add a randomized translation and a conclusion.
+	* conclusion.tex: Here.
+	* representation.tex: Here.
+
+2007-07-17  Nicolas Pierron  <nicolas.b.pierron@gmail.com>
+
+	Fix math notation.
+	* clifford.tex: Fix math notation.
+
+2007-07-17  Nicolas Pierron  <nicolas.b.pierron@gmail.com>
+
+	Finish the proof of the Lie group. 
+	* clifford.tex: Finish the proof of Lie(Spin(n)).
+	* physique.tex: Add details.
+
+2007-07-16  Nicolas Pierron  <nicolas.b.pierron@gmail.com>
+
+	Add Clifford algebra.
+	* clifford.tex: Add clifford algebra details.
+	* conclusion.tex: add a End-Of-Line at the end of the file.
+	* representation.tex: remove fragile annotation.
+	* slides.tex: Purge useless command.
+
+2007-07-09  Thomas Moulard  <thomas.moulard@lrde.epita.fr>
+
+	Ajoute la partie de Thomas.
+	* Makefile: Corrige le ChangeLog.
+	* clifford.tex: Ajoute le contenu.
+	* conclusion.tex: Idem.
+	* intro.tex: Idem.
+	* physique.tex: Idem.
+	* representation.tex: Idem.
+	* slides.tex: Idem.
+

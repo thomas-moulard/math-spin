@@ -1,0 +1,30 @@
+K 10
+svn:ignore
+V 205
+
+*.aux
+*.bbl
+*.blg
+diffs.patch
+*.dvi
+*.haux
+*.html
+*.htoc
+*.image.out
+*.image.tex
+*.log
+*.out
+*.pdf.txt
+*.t2d
+*.toc
+*.txt
+auto
+^+.*
++committed
+lrde.tex
+lrde.pdf
+lrde-private.pdf
+lrde-private.tex
+check.bib
+
+END

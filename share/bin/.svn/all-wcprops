@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/lrde-publis/!svn/ver/2153/trunk/share/bin
+END
+latin2tex
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/lrde-publis/!svn/ver/1975/trunk/share/bin/latin2tex
+END
+list2bib
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/lrde-publis/!svn/ver/1238/trunk/share/bin/list2bib
+END
+psbbox
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/lrde-publis/!svn/ver/1752/trunk/share/bin/psbbox
+END
+texi2dvi
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/lrde-publis/!svn/ver/2099/trunk/share/bin/texi2dvi
+END
+svndiff
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/lrde-publis/!svn/ver/1366/trunk/share/bin/svndiff
+END
+beamer2handout
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/lrde-publis/!svn/ver/1348/trunk/share/bin/beamer2handout
+END
+make-bib.pl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/lrde-publis/!svn/ver/2061/trunk/share/bin/make-bib.pl
+END
+svnci
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/lrde-publis/!svn/ver/1366/trunk/share/bin/svnci
+END
+pdfbook
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/lrde-publis/!svn/ver/1706/trunk/share/bin/pdfbook
+END
+update-cite
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/lrde-publis/!svn/ver/2050/trunk/share/bin/update-cite
+END
+instantiate-template.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lrde-publis/!svn/ver/2153/trunk/share/bin/instantiate-template.sh
+END
+psfit
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/lrde-publis/!svn/ver/1751/trunk/share/bin/psfit
+END
+svn-externals
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/lrde-publis/!svn/ver/1702/trunk/share/bin/svn-externals
+END

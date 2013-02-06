@@ -1,0 +1,77 @@
+\section{Introduction et définition du groupe Spin}
+\subsection{Pourquoi?}
+
+\begin{frame}
+  \begin{block}{Quel est le but de cette présentation?}
+    \begin{itemize}
+    \item Introduire le groupe Spin (présentation générale)
+    \item ...et expliquer le lien avec son interprétation physique.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\subsection{Groupe Spin}
+
+\begin{frame}
+  \begin{block}{Définition du groupe Spin}
+    En mathématiques, le groupe Spin de degré n, noté Spin(n),
+    est un revêtement double particulier du groupe spécial orthogonal
+    réel $SO(n,\mathbb{R})$. C'est-à-dire qu'il existe une suite exacte
+    de groupes de Lie:
+
+    $$1\to\mathbb{Z}_2\to\operatorname{Spin}(n)\to\operatorname{SO}(n)\to 1$$
+
+
+    Pour $n > 2$, Spin(n) est simplement connexe et coïncide avec le
+    revêtement universel de $SO(n,\mathbb{R})$.
+    En tant que groupe de Lie, Spin(n) partage sa dimension $n(n-1)/2$
+    et son algèbre de Lie avec le groupe spécial orthogonal.
+
+
+    Spin(n) peut être construit comme un sous-groupe des éléments
+    inversibles de l'algèbre de Clifford C(n).
+
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Définition d'un revêtement}
+    En mathématiques, et plus particulièrement en topologie,
+    un revêtement d'un espace topologique X par un espace topologique C
+    est une application continue et surjective
+    $$p : C \rightarrow X$$
+    telle que tout point $x\in X$ admette un voisinage ouvert U tel
+    que l'image réciproque de U par p soit une union disjointe d'ouverts
+    de C, chacun homéomorphe à U par p.
+
+
+    Il s'agit d'un cas particulier de fibration, à fibre discrète.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Cardinalité d'un revêtement}
+    Pour chaque $x \in X$, la fibre sur x est un sous-ensemble de C.
+    Sur chaque composent connecté de X, la cardinalité des fibres est la même
+    (et possiblement infinie). Si chaque fibre possède deux élément, on parle
+    de revêtement double.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Suite exacte}
+    On définit une suite exacte pour des ensembles munis
+    de la structure de groupe (groupe, anneau, module, etc...)
+    et des homomorphismes entre ces ensembles.
+    On supposera que les ensembles étudiés sont des groupes additifs.
+
+    Soient $\left( {G_i} \right)_{i \in \mathbb{Z}}$
+    des groupes et
+    $f_i : G_{i} \rightarrow G_{i+1}$
+    des morphismes de groupes, on dit que la suite:
+    $$\ldots \rightarrow G_i \rightarrow G_{i+1}
+      \rightarrow G_{i+2} \rightarrow ...$$
+      est exacte si pour tout i on a $Im(fi) = Ker(fi + 1)$.
+  \end{block}
+\end{frame}

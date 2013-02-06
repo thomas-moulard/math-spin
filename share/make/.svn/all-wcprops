@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/lrde-publis/!svn/ver/2120/trunk/share/make
+END
+share-am.mk
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/lrde-publis/!svn/ver/1860/trunk/share/make/share-am.mk
+END
+pdf-figs.mk
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/lrde-publis/!svn/ver/1940/trunk/share/make/pdf-figs.mk
+END
+tex.mk
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/lrde-publis/!svn/ver/2120/trunk/share/make/tex.mk
+END
+handout.mk
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/lrde-publis/!svn/ver/1380/trunk/share/make/handout.mk
+END
+share.mk
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/lrde-publis/!svn/ver/1442/trunk/share/make/share.mk
+END
+dist.mk
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/lrde-publis/!svn/ver/1991/trunk/share/make/dist.mk
+END
+dload.mk
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/lrde-publis/!svn/ver/1730/trunk/share/make/dload.mk
+END

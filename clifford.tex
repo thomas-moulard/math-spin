@@ -1,0 +1,159 @@
+\section{Algèbre de Clifford \&{} Groupe Spin}
+%% wikipedia power :p
+
+\def\Cl{\mathcal{C}\ell(V,Q)\,}
+\def\Cln{\mathcal{C}\ell(V,Q)\,}
+\def\Spinn{Spin\left(n\right)\,}
+\def\SOn{SO_n\left(\mathbb R\right)\,}
+\def\son{\mathfrak{so}\left(n\right)\,}
+\def\Mnr{\mathcal{M}_n\left(\mathbb R\right)\,}
+\newcommand{\Lie}[1]{Lie\left(#1\right)}
+
+\subsection{Algèbre de Clifford}
+\begin{frame}
+  \begin{block}{Produit Tensoriel}
+    $$C_{ij} = A_i \otimes B_j$$
+    $$\begin{bmatrix}
+        a_1b_1 & a_2b_1 & a_3b_1 \\
+	a_1b_2 & a_2b_2 & a_3b_2 \\
+	a_1b_3 & a_2b_3 & a_3b_3 \\
+	a_1b_4 & a_2b_4 & a_3b_4
+      \end{bmatrix}
+    = \begin{bmatrix}a_1 & a_2 & a_3\end{bmatrix}
+      \otimes
+      \begin{bmatrix}b_1 \\ b_2 \\ b_3 \\ b_4\end{bmatrix}
+	$$
+  \end{block}
+
+  \begin{block}{Algèbre de Clifford: Dimension}
+    $$dim(\Cln) = 2^n$$
+    $\Cln : $ Algèbre de Clifford ($V$: espace vectoriel, $Q$: forme quadratique).
+  \end{block}
+\end{frame}
+
+\subsection{Matrices Importantes}
+\begin{frame}
+  \begin{block}{Matrices de Pauli}
+    \begin{center}
+      $\sigma_x = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$
+      \ \ \ \ 
+      $\sigma_y = \begin{bmatrix} 0 & -i \\ i & 0 \end{bmatrix}$
+      \ \ \ \ 
+      $\sigma_z = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$
+      \\
+      Base de $SU(2)$.
+    \end{center}
+  \end{block}
+
+  \begin{block}{Propriétés}
+    $$\sigma_1^2 = \sigma_2^2 = \sigma_3^2 = \begin{pmatrix}
+    1&0\\0&1\end{pmatrix} = I$$
+
+    pour $i = 1, 2, 3$ :\\
+    \begin{center}
+      $\det (\sigma_i) = -1$ et $\operatorname{Tr} (\sigma_i) = 0$
+    \end{center}
+
+    \begin{center}
+      $[\sigma_i, \sigma_j] = 2 i\,\epsilon_{i j k}\,\sigma_k$ et
+      $\{\sigma_i, \sigma_j\} = 2 \delta_{i j} \cdot I$
+    \end{center}
+  \end{block}
+\end{frame}
+
+\def\sa{\sigma_x}
+\def\sb{\sigma_y}
+\def\sc{\sigma_z}
+
+\begin{frame}
+  \begin{block}{Matrice de Dirac}
+    anticommutateur : $\left\{A,B\right\}=AB+BA$.
+    \\
+    Les matrices de Dirac: $\gamma_1,\ldots,\gamma_n$ engendre une
+    algèbre de Clifford. Ces matrices qui ont la propriété :
+    $$\gamma_i\gamma_j + \gamma_j\gamma_i = 2\eta_{ij}$$
+    où $\eta$ est la matrice d'une forme quadratique.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Matrices de Dirac}
+    \[ \begin{matrix}
+      \gamma_1      &=& \sa \otimes  I  \otimes &\cdots &\otimes  I  \otimes  I  \\
+      \gamma_2      &=& \sb \otimes  I  \otimes &\cdots &\otimes  I  \otimes  I  \\
+      \gamma_3      &=& \sc \otimes \sa \otimes &\cdots &\otimes  I  \otimes  I  \\
+      \gamma_4      &=& \sc \otimes \sb \otimes &\cdots &\otimes  I  \otimes  I  \\
+                & \vdots &                      &\vdots &                        \\
+      \gamma_{2k-3} &=& \sc \otimes \sb \otimes &\cdots &\otimes \sa \otimes  I  \\
+      \gamma_{2k-2} &=& \sc \otimes \sb \otimes &\cdots &\otimes \sb \otimes  I  \\
+      \gamma_{2k-1} &=& \sc \otimes \sb \otimes &\cdots &\otimes \sc \otimes \sa \\
+      \gamma_{2k}   &=& \sc \otimes \sb \otimes &\cdots &\otimes \sc \otimes \sb \\
+      \gamma_{2k+1} &=& \sc \otimes \sb \otimes &\cdots &\otimes \sc \otimes \sc
+    \end{matrix} \]
+    $$\gamma_{2k+1} = (-i)^k \gamma_1 \gamma_2 \, \cdots \,
+    \gamma_{2k-1} \gamma_{2k}
+    \quad
+    \gamma_{i}^{2} = I
+    $$
+  \end{block}
+\end{frame}
+
+\subsection{Algèbre de Lie de $\Spinn$}
+\begin{frame}
+  \begin{block}{Groupe $\Gamma$}
+    Ensemble des éléments inversible de l'algèbre de Clifford.
+    $$\Gamma = \{ s \in \Cl | \forall x \in V,
+    sxs^{-1} \in V \} $$
+  \end{block}
+
+  \begin{block}{Norme de Spin}
+    $$\begin{matrix}
+       Q: & \Gamma & \to \Gamma \\
+	  & s      & \to \bar{s}s
+      \end{matrix}$$
+    involutions:
+    $$\bar x = \alpha({}^tx) = {}^t\alpha(x)$$
+    $$\mathcal{C}\ell^i(V,Q) = \{x \in \Cl | \alpha(x) = (-1)^ix\}\,$$
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Groupe Spin}
+    $$\begin{matrix}
+      Pin &=& \{s \in \Gamma | Q(s) = \pm I\} \\
+      Spin &=& Pin \cap \mathcal{C}\ell^0(V,Q)
+      \end{matrix}$$
+    Donc pour le groupe Spin on a:
+    $$\bar x = \alpha({}^t\!x) = (-1)^0\cdot{}{}^t\!x = {}^t\!x$$
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{$\son \neq \SOn$}
+    $$\son = \{ M \in \Mnr | {}^t\!M = -M \}$$
+  \end{block}
+  \begin{block}{$\Lie{\Spinn} \subseteq \son$}
+    %% Définition
+    $$\Lie{\Spinn} = \{M \in \Mnr | \forall x \in \mathbb R,
+    e^{xM} \in \Spinn\}$$
+    %% equivalence relations
+    $$e^{xM} \in \Spinn \Rightarrow Q(e^{xM}) = \pm I$$
+    $$Q(e^{xM}) = {}^t\!e^{xM}e^{xM} = e^{x{}^t\!M}e^{xM}$$
+    En dérivant en $t = 0$ on obtient:
+    $$\begin{matrix}
+      Q(e^{tM}) = \pm I & \Rightarrow & {}^t\!M + M = 0\\
+       & \Rightarrow & {}^t\!M = -M\\
+       & \Rightarrow & \Lie{\Spinn} \subseteq \son
+      \end{matrix}$$
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{$\Lie{\Spinn} = \son$}
+    $\Spinn$ est un revêtement de $\SOn$.\\[1ex]
+    Donc $\Lie{\SOn}$ est isomorphe à $\Lie{\Spinn}$.\\[1ex]
+    Ainsi $dim(\Lie{\Spinn}) = dim(\Lie{\SOn}) = dim(\son)$.\\[1ex]
+    Or $\Lie{\Spinn} \subseteq \son$.\\[1ex]
+    Donc $$\Lie{\Spinn} = \son$$
+  \end{block}
+\end{frame}

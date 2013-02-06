@@ -1,0 +1,80 @@
+\documentclass[mathserif]{beamer}
+
+\usepackage{beamerthemesplit}
+\usetheme{Warsaw}
+%% \usetheme{Copenhagen}
+
+\setbeamercolor{uppercol}{fg=white,bg=blue!40}
+\setbeamercolor{lowercol}{fg=black,bg=blue!15}
+\beamertemplateshadingbackground{blue!5}{blue!20}
+
+\usepackage[latin1]{inputenc}
+
+%\usepackage{pgf}
+%\usepackage{tikz}
+% \usepackage{pgflibrarysnakes}
+%\usepackage{multimedia}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{pstricks}
+%\usepackage{pst-node}
+%\usepackage{pst-tree}
+%\usepackage{colortbl}
+%\usepackage{url}
+%\usepackage{listings}
+
+\newcommand {\mytab}{\hspace*{0.5cm}}
+
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+
+\usepackage[french]{babel}
+
+% Change the default bottom line to include the page number.
+\defbeamertemplate*{footline}{infolines theme without institution}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1.125ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1.125ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1.125ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}%
+      % \insertshortdate{}\hspace*{2em}
+      \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\bibliographystyle{apalike}
+
+
+%%\logo{\includegraphics[width=1.2cm, height=1cm]{images/logo_lrde.png}}
+\title{Le groupe Spin}
+
+\author{Thomas Moulard, Nicolas Pierron}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+\frame{
+  \titlepage
+}
+
+\begin{frame}
+  \frametitle{Plan}
+
+  \tableofcontents
+\end{frame}
+
+\input{intro}
+\input{representation}
+\input{clifford}
+\input{physique}
+\input{conclusion}
+
+\end{document}
